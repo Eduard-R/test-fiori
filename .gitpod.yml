@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 8080
+    onOpen: open-browser
+    visibility: private
+
+tasks:
+  - command: |
+      npm install
+      npm run start
+
+vscode:
+  extensions:
+    - iljapostnovs.ui5plugin
+    - HookyQR.beautify
